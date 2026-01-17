@@ -1,0 +1,111 @@
+{
+  "file": "legacy/sales_invoice.py",
+  "classes": [
+    {
+      "name": "SalesInvoice",
+      "line": 10,
+      "methods": 10
+    }
+  ],
+  "functions": [
+    {
+      "name": "validate",
+      "line": 11,
+      "args": 1
+    },
+    {
+      "name": "before_submit",
+      "line": 16,
+      "args": 1
+    },
+    {
+      "name": "on_cancel",
+      "line": 20,
+      "args": 1
+    },
+    {
+      "name": "validate_items",
+      "line": 28,
+      "args": 1
+    },
+    {
+      "name": "validate_credit_limit",
+      "line": 39,
+      "args": 1
+    },
+    {
+      "name": "calculate_totals",
+      "line": 63,
+      "args": 1
+    },
+    {
+      "name": "get_item_price",
+      "line": 74,
+      "args": 2
+    },
+    {
+      "name": "update_stock_ledger",
+      "line": 86,
+      "args": 2
+    },
+    {
+      "name": "create_gl_entries",
+      "line": 109,
+      "args": 1
+    },
+    {
+      "name": "reverse_gl_entries",
+      "line": 128,
+      "args": 1
+    },
+    {
+      "name": "make_sales_invoice_from_order",
+      "line": 139,
+      "args": 1
+    }
+  ],
+  "complex_functions": [],
+  "imports": [
+    "frappe",
+    "frappe",
+    "frappe.model.document",
+    "frappe.utils"
+  ],
+  "calls": [
+    "validate_items",
+    "calculate_totals",
+    "validate_credit_limit",
+    "update_stock_ledger",
+    "create_gl_entries",
+    "reverse_gl_entries",
+    "update_stock_ledger",
+    "throw",
+    "_",
+    "flt",
+    "throw",
+    "_",
+    "get_item_price",
+    "get_value",
+    "sql",
+    "throw",
+    "_",
+    "flt",
+    "flt",
+    "flt",
+    "flt",
+    "get_value",
+    "sql",
+    "nowdate",
+    "sql",
+    "nowdate",
+    "sql",
+    "get_doc",
+    "new_doc",
+    "append",
+    "insert",
+    "whitelist"
+  ],
+  "issues": [
+    "Legacy or unsafe usage detected: frappe.db.sql"
+  ]
+}

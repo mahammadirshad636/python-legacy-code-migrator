@@ -1,0 +1,3 @@
+Replace unsafe legacy APIs
+Add type hints and dataclasses
+Use repository/service pattern
